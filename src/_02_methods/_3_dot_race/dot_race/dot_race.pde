@@ -7,9 +7,9 @@
    * If you cannot play sound on this computer, set canPlaySounds to false.
    * If you are not sure, ask your teacher 
    * *****************/
-  boolean canPlaySounds = true;
+  boolean canPlaySounds = false;
 
-int x;
+int x = 50;
 
 void setup() {
     size(800, 200);
@@ -20,6 +20,11 @@ void setup() {
 void draw() {
 
 	background(200,200,200);
+  fill(50,30,110);
+  ellipse(x,100,50,50);
+  if (mousePressed == true){
+  x+=10;
+  }
  
     //2. Draw an ellipse of height and width 50. Make sure to use the x variable for its X position. 
     //   Pick a y value that places it half way down the window.
