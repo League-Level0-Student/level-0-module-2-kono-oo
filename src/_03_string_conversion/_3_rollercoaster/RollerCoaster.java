@@ -5,7 +5,19 @@ import javax.swing.JOptionPane;
 public class RollerCoaster {
 
 	// 1) Make a main method that includes all the steps below…. 
-		
+	public static void main(String[] args) {
+		String heightToRide = JOptionPane.showInputDialog("Please enter your height in inches.");
+		int heightAsInt = Integer.parseInt(heightToRide);
+		if( heightAsInt < 42 ) {
+			JOptionPane.showMessageDialog(null,"GET TALLER");
+		}
+		else if( heightAsInt >= 42 && heightAsInt <= 47) {
+			JOptionPane.showMessageDialog(null,"Your may only ride with an adult.");
+		}
+		else {
+			JOptionPane.showMessageDialog(null,"riding alone is permitted");
+		}
+	}
 		// 2) Ask the user to enter their height in inches using JOptionPane and set it to the variable heightToRide
 		
 		// Uncomment the line below...
